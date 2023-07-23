@@ -30,7 +30,7 @@ def load_data(dataset, degree_as_tag, args_num_neighbors):
     lab_cl_list = []
     max_neigh_list = []
     lab_hf_list = []
-    cooc_matrix = np.load('acei_lab_coocmatrix_global_TOP_FREQ_DRUG_ACEI_LISINOPRIL_LATEST.npy') 
+    cooc_matrix = np.load('coocmatrix_global.npy') 
     with open('../dataset/%s/%s.txt' % (dataset, dataset), 'r') as f:
         n_g = int(f.readline().strip())
         for i in range(n_g):
