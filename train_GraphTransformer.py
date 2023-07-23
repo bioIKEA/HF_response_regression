@@ -111,17 +111,6 @@ def get_Adj_matrix(batch_graph):
             ind_dict[key_here] = val_here
         pat_ind_map_list.append(ind_dict)
         edge_mat_list.append(graph.edge_mat + start_idx[i])
-    
-
-
-                    
-
-        
-
-
-
-
-
 
     Adj_block_idx = np.concatenate(edge_mat_list, 1)
     Adj_block_idx_row = Adj_block_idx[0,:]
@@ -290,7 +279,6 @@ checkpoint_prefix = os.path.join(checkpoint_dir, "model")
 if not os.path.exists(checkpoint_dir):
     os.makedirs(checkpoint_dir)
 write_acc = open(checkpoint_prefix + '_acc.txt', 'w')
-
 
 cost_loss = []
 mean_mse_test_list = []
