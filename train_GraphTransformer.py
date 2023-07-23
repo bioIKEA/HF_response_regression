@@ -58,7 +58,7 @@ for i in range(fold_idx_new):
 
 feature_dim_size = graphs[0].node_features.shape[1]
 
-cooc_matrix = np.load('acei_lab_coocmatrix_global_DIBETESE_MELLITUS_HF_LATEST_COOC_METOPROLOL_GLIPIZIDE.npy')
+cooc_matrix = np.load('coocmatrix_global.npy')
 lab_vocab_index = {'1_3': 0, '2_0': 1, '0_2': 2, '0_3': 3, '1_2': 4, '0_1': 5, '1_0': 6, '2_1': 7, '1_4': 8, '0_0': 9, '1_1': 10}
 
 def get_Adj_matrix(batch_graph):    
